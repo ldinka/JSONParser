@@ -7,3 +7,8 @@ JSONParser allows you to parse a json into a HashMap-object. So elements are par
 * strings turn into String-objects;
 * true/false turn into boolean-primitives;
 * null turns into null.
+
+Start like this:
+```java
+Map<String, Object> map = new JObject(json).getAsMap();
+```
