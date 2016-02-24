@@ -10,5 +10,5 @@ JSONParser allows you to parse a json into a HashMap-object. So elements are par
 
 Start like this:
 ```java
-Map<String, Object> map = new JObject(json).getAsMap();
+HashMap<String, Object> map = new JObject(json).getAsMap();
 ```
