@@ -1,6 +1,6 @@
 package ru.funbox.jsonparser;
 
-import java.util.LinkedList;
+import java.util.ArrayList;
 import java.util.List;
 
 public class JArray extends JElement {
@@ -9,7 +9,7 @@ public class JArray extends JElement {
 
     public JArray(String json) {
         parsingState = JParsingState.AFTER_DELIMITER;
-        this.result = new LinkedList<Object>();
+        this.result = new ArrayList<Object>();
         this.json = json;
         try {
             if (isValidForBegin() && !isEmpty()) {

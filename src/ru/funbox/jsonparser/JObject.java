@@ -1,6 +1,6 @@
 package ru.funbox.jsonparser;
 
-import java.util.LinkedHashMap;
+import java.util.HashMap;
 import java.util.Map;
 
 public class JObject extends JElement {
@@ -10,7 +10,7 @@ public class JObject extends JElement {
 
     public JObject(String json) {
         parsingState = JParsingState.BEFORE_KEY;
-        this.result = new LinkedHashMap<String, Object>();
+        this.result = new HashMap<String, Object>();
         this.json = json;
         try {
             if (isValidForBegin() && !isEmpty()) {
