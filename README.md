@@ -1,4 +1,4 @@
-# JSONParser
+# jjParser (Java JSON Parser)
 
 JSONParser allows you to parse a json into a HashMap-object. So elements are parsed as follows:
 * json-objects turn into HashMap-objects;
